@@ -1,0 +1,210 @@
+﻿
+@{
+    ViewBag.Title = "_LayoutAdmin";
+    Layout =null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <title>Metronic | Dashboard</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    <link href="~/Assets/Admin/font/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Assets/Admin/plugins/simple-line-icons.min.css" rel="stylesheet" />
+   
+    <link href="~/Assets/Admin/plugins/uniform.default.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-switch/bootstrap2/bootstrap-switch.min.css" rel="stylesheet" />
+   
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <link href="~/Assets/Admin/plugins/daterangepicker.min.css" rel="stylesheet" />
+    <link href="~/Assets/Admin/plugins/morris.css" rel="stylesheet" />
+    <link href="~/Assets/Admin/plugins/fullcalendar.min.css" rel="stylesheet" />
+    @*<link href="~/Assets/Admin/plugins/jqvmap.css" rel="stylesheet" />*@
+    
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!-- BEGIN THEME GLOBAL STYLES -->
+    <link href="~/Assets/Admin/plugins/components.min.css" rel="stylesheet" />
+    <link href="~/Assets/Admin/plugins/plugins.min.css" rel="stylesheet" />
+   
+    <!-- END THEME GLOBAL STYLES -->
+    <!-- BEGIN THEME LAYOUT STYLES -->
+    <link href="~/Assets/Admin/plugins/layout.min.css" rel="stylesheet" />
+    <link href="~/Assets/Admin/plugins/darkblue.min.css" rel="stylesheet" />
+    <link href="~/Assets/Admin/plugins/custom.min.css" rel="stylesheet" />
+   
+    <!-- END THEME LAYOUT STYLES -->
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+<!-- END HEAD -->
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white">
+    <!-- BEGIN HEADER -->
+    <div class="page-header navbar navbar-fixed-top">
+        <!-- BEGIN HEADER INNER -->
+        <div class="page-header-inner ">
+            <!-- BEGIN LOGO -->
+            <div class="page-logo">
+                <a href="#"><h3 style="margin:2px;">Manager</h3>
+                   
+                 </a>
+                <div class="menu-toggler sidebar-toggler"> </div>
+            </div>
+            <!-- END LOGO -->
+            <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+            <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"> </a>
+            <!-- END RESPONSIVE MENU TOGGLER -->
+            <!-- BEGIN TOP NAVIGATION MENU -->
+            <div class="top-menu">
+                <ul class="nav navbar-nav pull-right">
+                   
+                    
+                    
+                </ul>
+            </div>
+            <!-- END TOP NAVIGATION MENU -->
+        </div>
+        <!-- END HEADER INNER -->
+    </div>
+    <!-- END HEADER -->
+    <!-- BEGIN HEADER & CONTENT DIVIDER -->
+    <div class="clearfix"> </div>
+    <!-- END HEADER & CONTENT DIVIDER -->
+    <!-- BEGIN CONTAINER -->
+    <div class="page-container">
+        <!-- BEGIN SIDEBAR -->
+        <div class="page-sidebar-wrapper">
+            <!-- BEGIN SIDEBAR -->
+            <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+            <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+            <div class="page-sidebar navbar-collapse collapse">
+                <!-- BEGIN SIDEBAR MENU -->
+                <!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+                <!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+                <!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+                <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+                <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                <ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
+                    <!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element -->
+                    <li class="sidebar-toggler-wrapper hide">
+                        <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+                        <div class="sidebar-toggler"> </div>
+                        <!-- END SIDEBAR TOGGLER BUTTON -->
+                    </li>
+                    <!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
+                    <li class="sidebar-search-wrapper">
+                       
+                    </li>
+                   
+                  
+                
+                   
+                  
+                  
+                 
+                 
+                </ul>
+                <!-- END SIDEBAR MENU -->
+                <!-- END SIDEBAR MENU -->
+            </div>
+            <!-- END SIDEBAR -->
+        </div>
+        <!-- END SIDEBAR -->
+        <!-- BEGIN CONTENT -->
+        <div class="page-content-wrapper">
+            <!-- BEGIN CONTENT BODY -->
+            <div class="page-content">
+                
+               
+               @RenderBody()
+                
+               
+            
+            </div>
+            <!-- END CONTENT BODY -->
+        </div>
+        <!-- END CONTENT -->
+        <!-- BEGIN QUICK SIDEBAR -->
+        
+       
+    </div>
+    <!-- END CONTAINER -->
+    <!-- BEGIN FOOTER -->
+    <div class="page-footer">
+        <div class="page-footer-inner">
+          Made by Team Web
+        </div>
+        <div class="scroll-to-top">
+            <i class="icon-arrow-up"></i>
+        </div>
+    </div>
+    <!-- END FOOTER -->
+    <!--[if lt IE 9]>
+    <script src="../assets/global/plugins/respond.min.js"></script>
+    <script src="../assets/global/plugins/excanvas.min.js"></script>
+    <![endif]-->
+    <!-- BEGIN CORE PLUGINS -->
+    <script src="~/Assets/Admin/js/jquery.min.js"></script>
+   
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Assets/Admin/js/js.cookie.min.js"></script>
+    <script src="~/Assets/Admin/js/bootstrap-hover-dropdown.min.js"></script>
+    <script src="~/Assets/Admin/js/jquery.slimscroll.min.js"></script>
+    <script src="~/Assets/Admin/js/jquery.blockui.min.js"></script>
+    <script src="~/Assets/Admin/js/jquery.uniform.min.js"></script>
+    <script src="~/Scripts/bootstrap-switch.min.js"></script>
+   
+    <!-- END CORE PLUGINS -->
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <script src="~/Assets/Admin/js/moment.min.js"></script>
+    <script src="~/Assets/Admin/js/daterangepicker.min.js"></script>
+    <script src="~/Assets/Admin/js/morris.min.js"></script>
+    <script src="~/Assets/Admin/js/raphael-min.js"></script>
+    <script src="~/Assets/Admin/js/jquery.waypoints.min.js"></script>
+    <script src="~/Assets/Admin/js/jquery.counterup.min.js"></script>
+    <script src="~/Assets/Admin/js/amcharts.js"></script>
+    <script src="~/Assets/Admin/js/serial.js"></script>
+    <script src="~/Assets/Admin/js/pie.js"></script>
+    <script src="~/Assets/Admin/js/radar.js"></script>
+    <script src="~/Assets/Admin/js/light.js"></script>
+    <script src="~/Assets/Admin/js/patterns.js"></script>
+    <script src="~/Assets/Admin/js/chalk.js"></script>
+    <script src="~/Assets/Admin/js/ammap.js"></script>
+    <script src="~/Assets/Admin/js/worldLow.js"></script>
+    <script src="~/Assets/Admin/js/amstock.js"></script>
+    <script src="~/Assets/Admin/js/fullcalendar.min.js"></script>
+    <script src="~/Assets/Admin/js/jquery.flot.min.js"></script>
+    <script src="~/Assets/Admin/js/jquery.flot.resize.min.js"></script>
+    <script src="~/Assets/Admin/js/jquery.flot.categories.min.js"></script>
+    <script src="~/Assets/Admin/js/jquery.easypiechart.min.js"></script>
+    <script src="~/Assets/Admin/js/jquery.sparkline.min.js"></script>
+    @*<script src="~/Assets/Admin/js/jquery.vmap.js"></script>
+    <script src="~/Assets/Admin/js/jquery.vmap.sampledata.js"></script>*@
+   
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!-- BEGIN THEME GLOBAL SCRIPTS -->
+    <script src="~/Assets/Admin/js/app.js"></script>
+   
+    <!-- END THEME GLOBAL SCRIPTS -->
+    <!-- BEGIN PAGE LEVEL SCRIPTS -->
+    <script src="~/Assets/Admin/js/dashboard.min.js"></script>
+   
+    <!-- END PAGE LEVEL SCRIPTS -->
+    <!-- BEGIN THEME LAYOUT SCRIPTS -->
+    <script src="~/Assets/Admin/js/layout.min.js"></script>
+    <script src="~/Assets/Admin/js/demo.min.js"></script>
+    <script src="~/Assets/Admin/js/quick-sidebar.min.js"></script>
+    
+    <!-- END THEME LAYOUT SCRIPTS -->
+</body>
+</html>
